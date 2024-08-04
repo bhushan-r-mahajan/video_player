@@ -5,7 +5,7 @@ class ApiErrorHandler extends Error {
     errors = [],
     stack = ""
   ) {
-    super(message);
+    super();
     this.statusCode = statusCode;
     this.data = null;
     this.success = false;
@@ -19,4 +19,4 @@ class ApiErrorHandler extends Error {
   }
 }
 
-export default ApiErrorHandler
+export default ApiErrorHandler;
